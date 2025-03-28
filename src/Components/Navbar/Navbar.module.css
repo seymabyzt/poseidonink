@@ -1,0 +1,11 @@
+
+.navbar-toggler{
+    background-color: none;
+    border: transparent;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    outline: none;
+}

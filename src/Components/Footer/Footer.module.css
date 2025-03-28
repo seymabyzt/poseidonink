@@ -1,0 +1,67 @@
+.footer {
+    background-color: var(--footer-background);
+    height: min-content;
+    position: relative;
+    margin-top: 4rem;
+}
+
+
+.footerContentTop{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(227, 222, 233)
+}
+.logo{
+    color: rgb(227, 222, 233);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.footerContentTopLeft{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px
+}
+.footerContentTopRight{
+    display: flex;
+    gap: 10px
+}
+.link{
+    color: rgb(227, 222, 233);
+    font-family: var(--font-openSans);
+    letter-spacing: var(--letter-spacing);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.footerContentBottom{
+    padding: 50px 0;
+}
+.bottomText{
+    color: rgb(227, 222, 233)
+}
+.footerHref{
+    color: rgb(227, 222, 233)
+}
+.footerIcon{
+    display: flex;
+    gap: 5px;
+}
+.footerIcon a{
+    cursor: pointer;
+    color: rgb(227, 222, 233);
+}
+.MailMe{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mailIcon a{
+    color: rgb(227, 222, 233);
+}
+@media screen and (max-width: 460px) {
+    .footerContentTopRight{
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+}
