@@ -1,0 +1,87 @@
+.carousel-inner{
+    position: relative;
+    min-height: 180px;
+}
+.apostrophe1{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+.apostrophe2{
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    z-index: 1;
+}
+.apostropheImg{
+    width: 40px;
+}
+.stars{
+    color: aqua;
+}
+@media screen and (max-width: 1400px) {
+    .apostrophe1{
+        position: absolute;
+        top: 90px;
+        left: 90px;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+    .apostrophe2{
+        position: absolute;
+        top: 0px;
+        right: 100px;
+        z-index: 1;
+    }
+    .comment{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .apostrophe1{
+        position: absolute;
+        top: 120px;
+        left: 90px;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+    .apostrophe2{
+        position: absolute;
+        top: 0px;
+        right: 100px;
+        z-index: 1;
+    }
+    .comment{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .carousel-inner{
+        position: relative;
+        min-height: 220px;
+    }
+    .apostrophe1{
+        position: absolute;
+        top: 160px;
+        left: 50px;
+        z-index: 1;
+        transform: rotate(180deg);
+    }
+    .apostrophe2{
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        z-index: 1;
+    }
+    .comment{
+        width: 60%;
+    }
+    .apostropheImg{
+        width: 20px;
+    }
+    
+}

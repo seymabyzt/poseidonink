@@ -1,8 +1,0 @@
-.tech{
-    transition: 0.3s all ease-in-out;
-}
-
-.tech:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-}

@@ -11863,4 +11863,37 @@ body {
   background-color: black;
 }
 
+.buttonColor {
+  background-color: #ffb22c;
+}
+
+.home {
+  display: flex;
+  position: relative;
+  background-image: url("../assets/home.png");
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.homeImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homeTitle {
+  z-index: 100;
+  text-align: center;
+}
+
+.homeTitle h1, .homeTitle .h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+}
+
 /*# sourceMappingURL=index.css.map */

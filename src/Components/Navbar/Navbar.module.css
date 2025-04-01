@@ -1,11 +1,30 @@
-
-.navbar-toggler{
+.navbar-toggler {
     background-color: none;
     border: transparent;
 }
-button:focus{
+
+button:focus {
     outline: none;
+    border: none;
 }
-button:active{
+
+button:active {
     outline: none;
+    border: none;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+  }
+  
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+@media screen and (min-width: 1000px) {
+  .centerLogo{
+    margin-left: 60px;
+  }
 }
