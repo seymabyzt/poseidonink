@@ -44,24 +44,36 @@
 }
 .footerIcon{
     display: flex;
-    gap: 5px;
+    gap:    10px;
+
+}
+.icons{
+    font-size: 1.5rem;
 }
 .footerIcon a{
     cursor: pointer;
     color: rgb(227, 222, 233);
+    font-size: 1.5rem;
 }
 .MailMe{
     display: flex;
     align-items: center;
     gap: 5px;
+    color: white;
+    font-size: 1.2rem;
+}
+.mailIcon{
+    color: white;
+    font-size: 1.5rem;
 }
 .mailIcon a{
     color: rgb(227, 222, 233);
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
     .footerContentTopRight{
         display: flex;
         flex-direction: column;
-        gap: 10px
+        gap: 10px;
     }
+  
 }

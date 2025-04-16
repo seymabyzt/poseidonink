@@ -1,25 +1,24 @@
 
 .langButton {
   box-sizing: content-box;
-    background: unset;
-    color: var(--text-color-black);
-    border: none;
-    width: max-content;
-    background: none;
-    font-family: var(--font-openSans);
-    font-weight: 400;
-    cursor: pointer;
-    padding-right: 10px;
-    position: relative;
-    font-size: 1.125rem;
-    line-height: 115%;
-    letter-spacing: var(--letter-spacing);
+  background: unset;
+  color: var(--text-color-black);
+  border: none;
+  width: max-content;
+  background: none;
+  font-family: var(--font-openSans);
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.125rem;
+  line-height: 115%;
+  letter-spacing: var(--letter-spacing);
 }
 
-  .button:hover {
-    background-color: var(--background-color);
-    color: var(--text-color-black);
-  }
+.button:hover {
+  background-color: var(--background-color);
+  color: var(--text-color-black);
+}
 
 /* tablet */
 @media (min-width: 850px) and (max-width: 1024px) {
@@ -36,11 +35,15 @@
 }
 /* tablet */
 @media (min-width: 768px) and (max-width: 850px) {
-
+  .langButton {
+    padding: 0 ;
+   }
 }
 /* mini tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-
+  .langButton {
+    padding: 0 ;
+   }
 }
 /* telefon */
 @media screen and (max-width: 480px) {
@@ -54,4 +57,6 @@
     line-height: 115%;
     letter-spacing: var(--letter-spacing);
 }
-}
+.langButton {
+ padding: 0 ;
+}}

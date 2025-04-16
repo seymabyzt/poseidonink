@@ -1,21 +1,25 @@
 import { useTranslation } from 'react-i18next';
 import './_carousel.scss'
 import apostrophe from '../../../assets/apostrophe.png';
-
+import homeimg from '../../../assets/homepagephoto.png';
 const Carousel = () => {
 
   const { t } = useTranslation()
 
   return (
     <>
-      <div className='container'>
+    <div className='carouselSection'>
+    <img src={homeimg} alt="" className='bg-img'/>
+  
+      <div className='container carouselContainer'>
+        <div>
         <h2 className="text-center fw-bold mb-4">{t('customerComments')}</h2>
         <div className='d-flex justify-content-center gap-2 stars'>
           <i className="fa-solid fa-star-of-life"></i>
           <i className="fa-solid fa-star-of-life"></i>
           <i className="fa-solid fa-star-of-life"></i>
         </div>
-        <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
+        <div id="testimonialCarousel" className="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
           <div className="carousel-inner relative">
             <div className='apostrophe1'> 
               <img src={apostrophe} alt="" className='apostropheImg'/>
@@ -49,6 +53,9 @@ const Carousel = () => {
             <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
           </button>
         </div>
+        </div>
+      
+      </div>
       </div>
     </>
   );

@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
 import LangButton from '../Atoms/LangButton/langButton';
-import './Navbar.module.css';
 import styles from './Navbar.module.css';
-import logo from '../../assets/logoPic.png';
-import Switch from '../Atoms/Switch/Switch';
-import logoTitle from '../../assets/logoTitle.png';
+import logo from '../../assets/logowhite.png';
+
 import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
@@ -25,31 +23,35 @@ export default function Navbar() {
     <nav className={`navbar navbar-expand-lg fixed-top ${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className="container">
         <a href="/">
-        <img src={logo} width={75} alt="poseidoninklogo" />
+        <img src={logo} width={270} alt="poseidoninklogo" />
         </a>
-       
-        <div className={styles.centerLogo}>
-          <a href="/">
-          <img src={logoTitle} width={150} alt="poseidoninklogo" />
-          </a>
-         
-        </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
+        <div className={styles.switchWrapper}  data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <Switch />
-        </button>
+        <div>
+          <input id="checkbox2" className={styles.checkbox2} type="checkbox" />
+          <label className={`${styles.toggle} ${styles.toggle2}`} htmlFor="checkbox2">
+            <div id="bar4" className={`${styles.bars} ${styles.bar4}`} />
+            <div id="bar5" className={`${styles.bars} ${styles.bar5}`}  />
+            <div id="bar6" className={`${styles.bars} ${styles.bar6}`}  />
+          </label>
+        </div>
+      </div>
         <div className="collapse navbar-collapse flex-grow-0" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className={styles.navPoseidon}>
+            <li className="nav-item">
             <LangButton />
+            </li>
             <li className="nav-item">
               <a className="nav-link active text-white" aria-current="page" href="/">
                 {t('home')}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active text-white" aria-current="page" href="/aboutus">
+                {t('aboutus')}
               </a>
             </li>
             <li className="nav-item">

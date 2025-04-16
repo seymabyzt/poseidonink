@@ -1,28 +1,33 @@
 import { useTranslation } from 'react-i18next'
-import homepagephoto from '../../../assets/homepagephoto.png'
 import '../../../../index.css'
 import Services from '../../Organisms/Services/Services'
 import Carousel from '../../Organisms/Carousel/Carousel'
 import Gallery from '../../Organisms/Gallery/Gallery'
+import homeVideo from '../../../assets/0403.mp4'
+import Locations from '../../Organisms/Locations/Locations'
 
-const HomePage: React.FC = () => {
+interface HomePageProps {
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ onClick }) => {
   const { t } = useTranslation()
 
   return (
     <>
-    <div> 
     <div className='home'>
-      <img src={homepagephoto} className='homeImg' alt="" />
-      <div className='homeTitle'>
-      <h1 className='mb-2'>Poseidon Ink Tattoo</h1>
-      <h2 className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, cumque.</h2>
-      <a href="tel:+905551234567">  <button className='btn btn-lg buttonColor'>{t('ContactUs')}</button></a>
+      <div className='overlay'> </div>
+      <video src={homeVideo} className='homeImg' autoPlay muted loop />
+      <div className='fade-in homeTitle col-lg-8 col-md-10 col-sm-10 col-10'>
+      <h1 className='homePageTitle'>Poseidon Ink Tattoo</h1>
+      <h2 className='my-4 homePageSubTitle'>{t('homeText')}</h2>
+     <button onClick={onClick} className='btn btn-lg btnHome'>{t('ContactUs')}</button>
       </div>
     </div>
     <Services/>
     <Carousel/>
     <Gallery/>
-    </div>
+    <Locations/>
     </>
   )
 }

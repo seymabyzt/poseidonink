@@ -11857,10 +11857,39 @@ textarea.form-control-lg {
 .App {
   background-color: black;
   color: white;
+  position: relative;
 }
 
 body {
   background-color: black;
+  -ms-overflow-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.mainButton {
+  position: fixed;
+  display: block;
+  right: -60px;
+  top: 50vh;
+  z-index: 100;
+  background-color: #ffb22c;
+  border: none;
+  padding: 1rem 2rem 2rem 2rem;
+  justify-content: center;
+  align-content: center;
+  border-radius: 8px;
+  cursor: alias;
+  font-size: 1rem;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+  transition: all 0.3s ease;
 }
 
 .buttonColor {
@@ -11878,6 +11907,26 @@ body {
   background-color: black;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.btnHome {
+  background-color: #ffb22c;
+}
+
+.btnHome:hover {
+  background: #1c1b1b;
+  color: #ffb22c;
+  border: #ffb22c 1px solid;
+}
+
 .homeImg {
   position: absolute;
   width: 100%;
@@ -11890,10 +11939,89 @@ body {
   text-align: center;
 }
 
-.homeTitle h1, .homeTitle .h1 {
+.homePageTitle {
   font-size: 5rem;
-  font-weight: 900;
-  color: white;
+  font-weight: 600;
+  color: rgb(242, 241, 241);
+}
+
+.homePageSubTitle {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(242, 241, 241);
+}
+
+.modalButtonColor {
+  background-color: #ffb22c;
+}
+
+.modalButtonColor:hover {
+  background-color: #ffb22c;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .mainButton {
+    right: -50px;
+    top: 50vh;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .homePageTitle {
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: white;
+  }
+  .homePageSubTitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainButton {
+    position: fixed;
+    display: block;
+    right: 20px;
+    top: 90vh;
+    z-index: 100;
+    background-color: #ffb22c;
+    border: none;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    border-radius: 8px;
+    cursor: alias;
+    font-size: 1rem;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: all 0.3s ease;
+  }
+  .homePageTitle {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+  }
+  .homePageSubTitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

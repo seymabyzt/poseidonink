@@ -1,58 +1,35 @@
 import { useTranslation } from 'react-i18next';
-import { Menu, MenuItem } from '@mui/material';
 import { useState } from 'react';
-import styles from './langButton.module.css'
+import styles from './langButton.module.css';
+
 export default function LangButton() {
-
   const { i18n } = useTranslation();
-  
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const isMenuOpen = Boolean(anchorEl);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
+  const toggleDropdown = () => {
+    setIsOpen(prev => !prev);
   };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
-  const clickHandle = async (lang: string | undefined) => {
+  const changeLanguage = async (lang: string) => {
     await i18n.changeLanguage(lang);
-    handleMenuClose();
+    setIsOpen(false);
   };
 
   return (
-    <>
+    <div className={`dropdown ${styles.langDropdown}`}>
       <button
-        aria-label="menu"
-        aria-controls="menu-appbar"
-        aria-haspopup="true"
-        onClick={handleMenuOpen}
-        className={styles.langButton}
+        className={`btn btn-secondary dropdown-toggle ${styles.langButton}`}
+        type="button"
+        onClick={toggleDropdown}
+        aria-expanded={isOpen}
       >
-       {(i18n.language === "tr" ? "TR" : "EN").toUpperCase()}
+        {(i18n.language === "tr" ? "TR" : i18n.language === "en" ? "EN" : "DE").toUpperCase()}
       </button>
-      <Menu
-        id="menu-appbar"
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        keepMounted
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        open={isMenuOpen}
-        onClose={handleMenuClose}
-        disableScrollLock
-      >
-        <MenuItem onClick={() => clickHandle('en')}>EN</MenuItem>
-        <MenuItem onClick={() => clickHandle('tr')}>TR</MenuItem>
-        <MenuItem onClick={() => clickHandle('de')}>DE</MenuItem>
-      </Menu>
-    </>
+      <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
+        <li><button className="dropdown-item" onClick={() => changeLanguage('en')}>EN</button></li>
+        <li><button className="dropdown-item" onClick={() => changeLanguage('tr')}>TR</button></li>
+        <li><button className="dropdown-item" onClick={() => changeLanguage('de')}>DE</button></li>
+      </ul>
+    </div>
   );
 }

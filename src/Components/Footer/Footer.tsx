@@ -1,10 +1,8 @@
 
 import styles from "./Footer.module.css";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useTranslation } from 'react-i18next'
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import logoTitle from '../../assets/logoTitle.png';
-
+import logo from '../../assets/logoPic.png';
 export default function Footer() {
   const {t} = useTranslation();
 
@@ -18,19 +16,24 @@ export default function Footer() {
                 <img src={logoTitle} width={200} alt="" />
               </a>
               <div className={styles.footerIcon}>
-                <a target="blank" href="https://wa.me/905525279096"> <WhatsAppIcon />
+                <a target="blank" href="https://wa.me/905537843572" ><i className="fa-brands fa-whatsapp "></i>
                 </a>
-                <a target="blank" href="https://wa.me/905525279096"> instagram
+                <a target="blank" href="https://www.instagram.com/poseidonink_/"> <i className="fa-brands fa-instagram"></i>
                 </a>
               </div>
               <div className={styles.mailIcon}>
-              <a href="mailto:info@seymabayezit.com" className={styles.MailMe}>   
-                <MailOutlineIcon></MailOutlineIcon> 
-                <span>info@poseidonink.com</span></a>
+              <a href="mailto:info@poseidonink.com" target="blank" className={styles.MailMe}>   
+              <i className="fa-solid fa-envelope"></i>             
+              <span>info@poseidonink.com</span>
+              </a>
               </div>
+            </div>
+            <div>
+              <img src={logo} alt="" width={100}/>
             </div>
             <div className={styles.footerContentTopRight}>
               <a className={styles.link} href="/" >{t('home')}</a>
+              <a className={styles.link}  href="/aboutus" >{t('aboutus')}</a>
               <a className={styles.link}  href="/contact" >{t('contact')}</a>
               </div>
           </div>

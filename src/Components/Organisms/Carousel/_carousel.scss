@@ -1,87 +1,141 @@
-.carousel-inner{
+.carouselSection {
     position: relative;
-    min-height: 180px;
+    width: 100%;
+    height: 45rem;
 }
-.apostrophe1{
+
+.bg-img {
     position: absolute;
-    top: 80px;
-    left: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouselContainer {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 2rem 0;
+    background: rgba(109, 103, 103, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.carousel-inner {
+    position: relative;
+    height: 180px;
+}
+
+.apostrophe1 {
+    position: absolute;
+    top: 120px;
+    left: 130px;
     z-index: 1;
     transform: rotate(180deg);
 }
-.apostrophe2{
+
+.apostrophe2 {
     position: absolute;
     top: 0px;
     right: 150px;
     z-index: 1;
 }
-.apostropheImg{
+
+.apostropheImg {
     width: 40px;
 }
-.stars{
-    color: aqua;
+
+.stars {
+    color: #ffb22c;
 }
+
+.comment {
+    width: 60%;
+}
+
 @media screen and (max-width: 1400px) {
-    .apostrophe1{
+    .apostrophe1 {
         position: absolute;
-        top: 90px;
-        left: 90px;
+        top: 110px;
+        left: 50px;
         z-index: 1;
         transform: rotate(180deg);
     }
-    .apostrophe2{
+
+    .apostrophe2 {
         position: absolute;
         top: 0px;
         right: 100px;
         z-index: 1;
     }
-    .comment{
-        width: 60%;
+
+    .comment {
+        width: 70%;
+        height: fit-content;
     }
-    
+    .carousel-inner {
+        height: 180px;
+    }
+
 }
+
 @media screen and (max-width: 768px) {
-    .apostrophe1{
+    .apostrophe1 {
         position: absolute;
         top: 120px;
         left: 90px;
         z-index: 1;
         transform: rotate(180deg);
     }
-    .apostrophe2{
+
+    .apostrophe2 {
         position: absolute;
         top: 0px;
         right: 100px;
         z-index: 1;
     }
-    .comment{
+
+    .comment {
         width: 60%;
     }
-    
+
 }
-@media screen and (max-width: 768px) {
-    .carousel-inner{
+
+@media screen and (max-width: 451px) {
+    .carousel-inner {
         position: relative;
-        min-height: 220px;
+        min-height: 260px;
     }
-    .apostrophe1{
+
+    .apostrophe1 {
         position: absolute;
-        top: 160px;
+        top: 220px;
         left: 50px;
         z-index: 1;
         transform: rotate(180deg);
     }
-    .apostrophe2{
+
+    .apostrophe2 {
         position: absolute;
         top: 0px;
         right: 60px;
         z-index: 1;
     }
-    .comment{
+
+    .comment {
         width: 60%;
     }
-    .apostropheImg{
+
+    .apostropheImg {
         width: 20px;
     }
-    
+    .carouselContainer {
+        width: 80%;
+    }
+
 }
