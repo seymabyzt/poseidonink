@@ -63,7 +63,7 @@ const Contact = () => {
             <i className="fa-solid fa-phone-volume"></i>            
             </div>
             <p className="text-center contactPageCardFont">{t('phone')}<br />
-            <a target="_blank" className="text-white fw-bold" href="tel:+905537843572">+90 553 784 35 72</a>
+            <a target="_blank" className="text-white fw-bold" href="tel:+905335062573">+90 533 506 25 73</a>
             </p>
             </div>
           </div>
@@ -123,7 +123,7 @@ const Contact = () => {
               className="form-control border-0 border-bottom" 
               value={formData.phone} 
               onChange={handleChange} 
-              placeholder="+90 555 123 45 67"
+              placeholder="+90 533 506 25 73"
               required />
             </div>
             </div>

@@ -13,11 +13,13 @@ const Carousel = () => {
   
       <div className='container carouselContainer'>
         <div>
-        <h2 className="text-center fw-bold mb-4">{t('customerComments')}</h2>
+        <h2 className="text-center fw-bold mb-4">{t('customerCommentsTitle')}</h2>
         <div className='d-flex justify-content-center gap-2 stars'>
           <i className="fa-solid fa-star-of-life"></i>
           <i className="fa-solid fa-star-of-life"></i>
           <i className="fa-solid fa-star-of-life"></i>
+            <i className="fa-solid fa-star-of-life"></i>
+              <i className="fa-solid fa-star-of-life"></i>
         </div>
         <div id="testimonialCarousel" className="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
           <div className="carousel-inner relative">
@@ -25,25 +27,76 @@ const Carousel = () => {
               <img src={apostrophe} alt="" className='apostropheImg'/>
             </div>
             <div className="carousel-item active">
-              <div className="testimonial-card row justify-content-center text-center p-4">
-                <h5 className="my-3">isim</h5>
-                <p className="comment mt-2">"İlk dövmemi burada yaptırdım ve sonuç harika! Hem hijyen hem de ilgi mükemmeldi. Gönül rahatlığıyla herkese tavsiye ederim"</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="testimonial-card row justify-content-center text-center p-4">
-                <h5 className="my-3">isim</h5>
-                <p className="comment mt-2">"Hayal ettiğim dövmeyi birebir tasarlayıp uyguladılar. Profesyonellik ve samimiyet bir arada! Gerçekten sanatlarını konuşturuyorlar."</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="testimonial-card row justify-content-center text-center p-4">
-                <h5 className="my-3">isim</h5>
-                <p className="comment mt-2">"Eski dövmemi kapattırmak için geldim, sonuç beklentimin çok üzerinde oldu. İyi ki sizi tercih etmişim, emeğinize sağlık!"</p>
-              </div>
-            </div>
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Andreas Roll</h5>
+    <p className="comment mt-2">{t('customerComments.andreasRoll')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Ömer Yılmaz</h5>
+    <p className="comment mt-2">{t('customerComments.omerYilmaz')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Duygu Ece</h5>
+    <p className="comment mt-2">{t('customerComments.duyguEce')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Ceylin Taslak</h5>
+    <p className="comment mt-2">{t('customerComments.ceylinTaslak')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Alex Nedeljkovic</h5>
+    <p className="comment mt-2">{t('customerComments.alexNedeljkovic')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Melike Sultan Yılmaz</h5>
+    <p className="comment mt-2">{t('customerComments.melikeSultanYilmaz')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Natasha Oguntade</h5>
+    <p className="comment mt-2">{t('customerComments.natashaOguntade')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">milhan</h5>
+    <p className="comment mt-2">{t('customerComments.milhan')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Harrison Brake</h5>
+    <p className="comment mt-2">{t('customerComments.harrisonBrake')}</p>
+  </div>
+</div>
+
+<div className="carousel-item">
+  <div className="testimonial-card row justify-content-center text-center p-4">
+    <h5 className="my-3">Kylie Summers</h5>
+    <p className="comment mt-2">{t('customerComments.kylieSummers')}</p>
+  </div>
+</div>
             <div className='apostrophe2 '>
-            <img src={apostrophe}  alt="" className='apostropheImg' />
+            <img src={apostrophe}  alt="" className='apostropheImg'/>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">

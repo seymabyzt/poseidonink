@@ -16,7 +16,7 @@ export default function Footer() {
                 <img src={logoTitle} width={200} alt="" />
               </a>
               <div className={styles.footerIcon}>
-                <a target="blank" href="https://wa.me/905537843572" ><i className="fa-brands fa-whatsapp "></i>
+                <a target="blank" href="https://wa.me/905335062573" ><i className="fa-brands fa-whatsapp "></i>
                 </a>
                 <a target="blank" href="https://www.instagram.com/poseidonink_/"> <i className="fa-brands fa-instagram"></i>
                 </a>
@@ -28,7 +28,7 @@ export default function Footer() {
               </a>
               </div>
             </div>
-            <div>
+            <div className={styles.footerImg}>
               <img src={logo} alt="" width={100}/>
             </div>
             <div className={styles.footerContentTopRight}>

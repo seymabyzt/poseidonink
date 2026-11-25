@@ -8,7 +8,7 @@ const resources = {
             homeTitle: "Poseidon Dövme Salonu",
             finish: "© 2025 | Sym Dijital Tasarım ve Geliştirme",
             contact: "İletişim",
-            customerComments: "Müşteri Yorumları",
+            customerCommentsTitle: "Müşteri Yorumları",
             ContactUs: 'Hemen Ara!',
             gallery: "Galeri",
             contact: "İletişim",
@@ -47,6 +47,18 @@ const resources = {
             piercingText: "Hijyen ve stil bir arada! Kulak, burun, kaş ve daha fazlası için güvenli ve profesyonel piercing uygulamaları sunuyoruz.",
             freedesignText: 'Sadece sana özel dövme tasarımları tamamen ücretsiz! Fikirlerini dinliyor, sana özel çizimler hazırlıyoruz.',
             laserText: 'İstenmeyen dövmelerden kurtulmanın en etkili yolu! Gelişmiş lazer teknolojisiyle dövmelerini güvenle ve iz bırakmadan siliyoruz.',
+            customerComments: {
+  andreasRoll: "Mükemmel hizmet, harika sanatçılar, samimi bir atmosfer! Didim'deki stüdyoya bir sonraki ziyaretimi dört gözle bekliyorum!! Saygılarımla",
+  omerYilmaz: "Eşim ve ben ilk dövmelerimizi yaptırdık. Tedirgindik ama ilgi alakaları ve bilgilendirmeleri ile içimizi rahatlattılar. Boyaları kaliteli, dövmenin bile garantisini veriyorlar boya atmasına karşı. Dövme düşünüyorsanız mutlaka uğrayın.",
+  duyguEce: "Çok kibar, çok ilgili çalışanlardı. Çok memnun kaldım. Tragus deldirdim ve ağrısız, acısız, kolay bir işlem oldu. Her şey için teşekkür ediyorum.",
+  ceylinTaslak: "Her şeyi ile mükemmel bir işletme. Özellikle Halil Bey işinde usta desem az kalır. Ben 2. büyük dövmemi yaptırmaya gittim ve beni gören 6 arkadaşım daha dövmelerini orada yaptırdı. Hepimiz çok memnunuz. Bir yıldır hiçbir problem yaşamadık, aksine çok güzel dostlar edindik ve ömürlük bir dövme piercing stüdyosu buldum. Samimiyetle tavsiye ederim.",
+  alexNedeljkovic: "Yıllardır taşıdığım eski dövmemi yenisiyle kapatmak istedim. Poisedon Ink'e gittim ve çalışanlar tasarım ve her konuda çok yardımcı oldular. Sonuçtan çok memnun kaldım ve yakında başka dövmeler için tekrar gideceğim. Kesinlikle tavsiye ederim. Benden 10/10.",
+  melikeSultanYilmaz: "Çok nezih ve temiz bir ortam. İlgi alakaları çok güzeldi. Yeni dövmeler için tekrardan geleceğiz. Kullandıkları ürünler kaliteli ve çizimleri çok temiz, işçiliğini çok beğendik. Güvenle tercih edebilirsiniz.",
+  natashaOguntade: "Eşimle birlikte burada harika bir deneyim yaşadık!! Çok misafirperver, nazik ve yaptıkları iş muhteşemdi. Her tatilimizde yaptığımız gibi biz de aynı dövmeleri yaptırdık! Türkiye'yi tekrar ziyaret ettiğimizde kesinlikle geri döneceğiz! Çok teşekkürler!! 💞",
+  milhan: "Uzun zamandır istediğim dövmeyi sonunda yaptırdım ve gerçekten bayıldım 😍 Hem hijyen konusunda inanılmaz titizler hem de tasarım aşamasında o kadar ilgililer ki kendinizi çok güvende hissediyorsunuz. Çizgiler tertemiz, detaylar tam istediğim gibi oldu. Acı konusunda da sürekli rahatlatıp ilgilendiler. İyi ki burayı tercih etmişim, bundan sonra tek adresim 💫👏",
+  harrisonBrake: "Harika bir deneyimdi ve harika insanlardı. Sadece tasarım ve genel fikir konusunda yardımcı olmakla kalmadılar, aynı zamanda çok anlayışlıydılar.",
+  kylieSummers: "Otel içerisinde temiz ve davetkar bir dükkan. Profesyonel ve yardımseverlerdi. Dövmemden gerçekten çok memnun kaldım, bu dükkanı herkese tavsiye ederim. Teşekkür ederim 😊"
+}
         }
     },
     en: {
@@ -55,7 +67,7 @@ const resources = {
             homeTitle: "Poseidon Ink Studio",
             finish: "© 2025 | Designed and Developed by Şeyma Bayezit",
             contact: "Contact",
-            customerComments: "Customer Comments",
+            customerCommentsTitle: "Customer Comments",
             ContactUs: 'Contact Us!',
             gallery: "Gallery",
             contact: "Contact",
@@ -93,6 +105,18 @@ const resources = {
             piercingText: "Hygiene and style together! We offer safe and professional piercing applications for ears, nose, eyebrows and more.",
             freedesignText: 'Tattoo designs that are completely free and unique to you! We listen to your ideas and prepare designs just for you.',
             laserText: 'The most effective way to get rid of unwanted tattoos! We safely and scarlessly remove your tattoos with advanced laser technology.',
+            customerComments: {
+  andreasRoll: "Excellent service, great artists, and a friendly atmosphere! I am looking forward to my next visit to the studio in Didim!! Best regards.",
+  omerYilmaz: "My wife and I got our first tattoos. We were nervous, but their attention, care, and explanations made us feel comfortable. They use quality inks and even guarantee the tattoo against ink fading. If you are thinking about getting a tattoo, you should definitely visit.",
+  duyguEce: "The staff were very kind and attentive. I was very satisfied. I had my tragus pierced and it was a painless, easy procedure. Thank you for everything.",
+  ceylinTaslak: "A perfect business in every way. Especially Mr. Halil is truly a master of his craft. I went there for my second large tattoo, and after seeing mine, six of my friends also got their tattoos there. We are all very satisfied. We have had no problems for a year; on the contrary, we made wonderful friends and found a lifelong tattoo and piercing studio. I sincerely recommend it.",
+  alexNedeljkovic: "I wanted to cover an old tattoo I had carried for years with a new one. I went to Poisedon Ink and the staff helped me a lot with the design and everything else. I am very happy with the result and will be back soon for more tattoos. I definitely recommend them. 10/10 from me.",
+  melikeSultanYilmaz: "A very decent and clean environment. Their care and attention were excellent. We will come back for new tattoos. The products they use are high quality, their designs are very clean, and we really liked their workmanship. You can choose them with confidence.",
+  natashaOguntade: "My husband and I had a wonderful experience here!! They were very welcoming and kind, and their work was amazing. As we do on every holiday, we got matching tattoos! We will definitely come back when we visit Turkey again! Thank you so much!! 💞",
+  milhan: "I finally got the tattoo I had wanted for a long time and I absolutely loved it 😍 They are incredibly meticulous about hygiene, and they are so attentive during the design process that you feel completely safe. The lines are perfectly clean and the details turned out exactly as I wanted. They also kept comforting and checking on me during the pain. I am so glad I chose this place; from now on, it is my only address 💫👏",
+  harrisonBrake: "It was a great experience with wonderful people. Not only did they help with the design and general idea, but they were also very understanding.",
+  kylieSummers: "A clean and welcoming shop inside the hotel. They were professional and helpful. I am really happy with my tattoo and would recommend this shop to everyone. Thank you 😊"
+}
         }
     },
     de: {
@@ -101,7 +125,7 @@ const resources = {
             homeTitle: "Poseidon Ink Studio",
             finish: "© 2025 | Gestaltet und entwickelt von Şeyma Bayezit",
             contact: "Kontakt",
-            customerComments: "Kundenbewertungen",
+            customerCommentsTitle: "Kundenbewertungen",
             ContactUs: "Kontaktiere uns!",
             gallery: "Galerie",
             phone: "Telefon",
@@ -139,6 +163,18 @@ const resources = {
              piercingText: "Hygiene und Stil vereint! Wir bieten sichere und professionelle Piercing-Anwendungen für Ohren, Nase, Augenbrauen und mehr an.",
              freedesignText: 'Tattoo-Designs, die völlig kostenlos und einzigartig für Sie sind! Wir hören uns Ihre Ideen an und erstellen Designs nur für Sie.',
              laserText: 'Der effektivste Weg, um unerwünschte Tattoos loszuwerden! Wir entfernen Ihre Tattoos sicher und ohne Narben mit modernster Lasertechnologie.',
+             customerComments: {
+  andreasRoll: "Ausgezeichneter Service, großartige Künstler und eine freundliche Atmosphäre! Ich freue mich schon auf meinen nächsten Besuch im Studio in Didim!! Mit freundlichen Grüßen.",
+  omerYilmaz: "Meine Frau und ich haben unsere ersten Tattoos machen lassen. Wir waren nervös, aber durch ihre Aufmerksamkeit, ihr Interesse und ihre Erklärungen haben sie uns beruhigt. Sie verwenden hochwertige Farben und geben sogar eine Garantie gegen Farbverlust. Wenn Sie über ein Tattoo nachdenken, sollten Sie unbedingt vorbeischauen.",
+  duyguEce: "Die Mitarbeiter waren sehr höflich und aufmerksam. Ich war sehr zufrieden. Ich habe mir ein Tragus-Piercing stechen lassen und es war ein schmerzfreier, einfacher Vorgang. Vielen Dank für alles.",
+  ceylinTaslak: "Ein in jeder Hinsicht perfektes Unternehmen. Besonders Herr Halil ist ein wahrer Meister seines Fachs. Ich war dort für mein zweites großes Tattoo, und nachdem meine Freunde es gesehen hatten, haben sich sechs weitere Freunde ebenfalls dort tätowieren lassen. Wir sind alle sehr zufrieden. Seit einem Jahr hatten wir keinerlei Probleme; im Gegenteil, wir haben tolle Freunde gefunden und ein Tattoo- und Piercingstudio fürs Leben entdeckt. Ich empfehle es von Herzen.",
+  alexNedeljkovic: "Ich wollte mein altes Tattoo, das ich seit Jahren trug, mit einem neuen Tattoo covern lassen. Ich ging zu Poisedon Ink und die Mitarbeiter halfen mir sehr beim Design und bei allem anderen. Mit dem Ergebnis bin ich sehr zufrieden und werde bald für weitere Tattoos wiederkommen. Ich kann sie definitiv empfehlen. Von mir 10/10.",
+  melikeSultanYilmaz: "Eine sehr angenehme und saubere Umgebung. Ihre Aufmerksamkeit und ihr Interesse waren großartig. Für neue Tattoos werden wir wiederkommen. Die verwendeten Produkte sind hochwertig, ihre Zeichnungen sehr sauber und die Arbeit hat uns sehr gefallen. Sie können sie mit Vertrauen wählen.",
+  natashaOguntade: "Mein Mann und ich hatten hier eine wunderbare Erfahrung!! Sie waren sehr gastfreundlich, freundlich und ihre Arbeit war großartig. Wie auf jedem Urlaub haben wir uns auch hier passende Tattoos machen lassen! Wenn wir die Türkei wieder besuchen, kommen wir definitiv zurück! Vielen Dank!! 💞",
+  milhan: "Ich habe mir endlich das Tattoo machen lassen, das ich schon lange wollte, und ich liebe es wirklich 😍 Sie sind unglaublich sorgfältig in Bezug auf Hygiene und während der Designphase so aufmerksam, dass man sich vollkommen sicher fühlt. Die Linien sind sehr sauber und die Details wurden genau so, wie ich sie wollte. Auch während der Schmerzen haben sie mich ständig beruhigt und sich um mich gekümmert. Ich bin sehr froh, dass ich diesen Ort gewählt habe; ab jetzt ist das meine einzige Adresse 💫👏",
+  harrisonBrake: "Es war eine großartige Erfahrung mit wunderbaren Menschen. Sie haben nicht nur beim Design und der allgemeinen Idee geholfen, sondern waren auch sehr verständnisvoll.",
+  kylieSummers: "Ein sauberer und einladender Laden im Hotel. Sie waren professionell und hilfsbereit. Ich bin wirklich sehr zufrieden mit meinem Tattoo und würde diesen Laden jedem empfehlen. Vielen Dank 😊"
+}
         }
     }
 }

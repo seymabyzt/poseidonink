@@ -19,7 +19,7 @@ const Modal = ({ isModalOpen, onClose }: ModalProps) => {
                         </div>
                         <div className="modal-body d-flex">
                             <div>
-                                <div className='d-flex gap-5'>
+                                <div className={styles.socialButtons}>
                                     <a href="https://www.instagram.com/poseidonink_/" target='_blank' rel="noopener noreferrer">
                                         <button className={styles.BtnInstagram}>
                                             <span className={styles.svgContainer}>
@@ -28,7 +28,7 @@ const Modal = ({ isModalOpen, onClose }: ModalProps) => {
                                             <span className={styles.instaBG}></span>
                                         </button>
                                     </a>
-                                    <a href="https://wa.me/+905537843572" target='blank'>
+                                    <a href="https://wa.me/+905335062573" target='blank'>
                                         <button className={styles.whatsappBtn}>
                                             <span className={styles.whatsappsvgContainer}>
                                                 <svg viewBox="0 0 16 16" height="2.2em"  className={styles.whatsappsvgIcon} fill="white">
@@ -59,7 +59,7 @@ const Modal = ({ isModalOpen, onClose }: ModalProps) => {
                         <div className="modal-footer">
                             <button type="button" onClick={onClose} className="btn  modalButtonColor text-black" data-bs-dismiss="modal ">Kapat</button>
                             <button className="animated-button btn modalButtonColor"
-                                type="button" > <a className="text-black text-decoration-none" href="tel:+905537843572" target="_blank">Randevu Al</a></button>
+                                type="button" > <a className="text-black text-decoration-none" href="tel:+905335062573" target="_blank">Randevu Al</a></button>
                         </div>
                     </div>
                 </div>

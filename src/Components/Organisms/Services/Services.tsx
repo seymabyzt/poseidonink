@@ -2,7 +2,7 @@ import './_services.scss'
 import lionTattoo from '../../../Assets/lionTattoo.jpeg';
 import piercing from '../../../Assets/piercing.png';
 import coverup from '../../../Assets/coverup.jpeg';
-import laserremoval from '../../../Assets/laserremoval.png';
+// import laserremoval from '../../../Assets/laserremoval.png';
 import freedesign from '../../../Assets/freedesign.jpg';
 import { useTranslation } from 'react-i18next';
 
@@ -55,7 +55,7 @@ const Services = () => {
                             </div>
                     </div>
                 </div>
-                <div className="col m-1 d-flex justify-content-center fade-in">
+                {/* <div className="col m-1 d-flex justify-content-center fade-in">
                 <div className="custom-card">
                         <img className="hover-img" src={laserremoval} width={200} alt="" />
                         <div className="fs-5 fw-bold custom-card-title">{t('laser')}</div>
@@ -66,7 +66,7 @@ const Services = () => {
                                 <p className="hover-text">{t('laserText')}</p>
                             </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="col m-1 d-flex justify-content-center fade-in">
                 <div className="custom-card">
                         <img className="hover-img" src={freedesign} width={200} alt="" />

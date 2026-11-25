@@ -32,6 +32,8 @@
     border: #ffb22c 1px solid;
     padding: 15px;
     border-radius: 10px;
+    animation: fadeIn 0.5s ease;
+
 }
 .vision{
     margin: 1rem;
@@ -43,7 +45,8 @@
     font-size: 1.2rem;
     color: rgb(242, 241, 241);
     font-weight: 400;
-    
+    animation: fadeIn 0.5s ease;
+
 }
 @media screen and (min-width: 992px) and (max-width: 1401px){
     .img{
@@ -111,5 +114,13 @@
         width: 40%;
     }
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
 
